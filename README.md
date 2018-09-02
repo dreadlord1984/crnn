@@ -3,8 +3,11 @@ Convolutional Recurrent Neural Network
 
 This software implements the Convolutional Recurrent Neural Network (CRNN), a combination of CNN, RNN and CTC loss for image-based sequence recognition tasks, such as scene text recognition and OCR. For details, please refer to our paper http://arxiv.org/abs/1507.05717.
 
-**UPDATE (Mar 14)** A Docker file has been added to the project. Thanks to @varun-suresh.
+**UPDATE Mar 14, 2017** A Docker file has been added to the project. Thanks to [@varun-suresh](https://github.com/varun-suresh).
 
+**UPDATE May 1, 2017** A PyTorch [port](https://github.com/meijieru/crnn.pytorch) has been made by [@meijieru](https://github.com/meijieru).
+
+**UPDATE Jun 19, 2017** For an end-to-end text detector+recognizer, check out the [CTPN+CRNN implementation](https://github.com/AKSHAYUBHAT/DeepVideoAnalytics/tree/master/notebooks/OCR) by [@AKSHAYUBHAT](https://github.com/AKSHAYUBHAT).
 
 Build
 -----
@@ -31,6 +34,11 @@ Expected output:
     Loading model...
     Model loaded from ../model/crnn_demo/model.t7
     Recognized text: available (raw: a-----v--a-i-l-a-bb-l-e---)
+    
+Another example:
+![Example Image2](./data/demo2.jpg)
+
+    Recognized text: shakeshack (raw: ss-h-a--k-e-ssh--aa-c--k--)
 
 
 Use pretrained model
@@ -63,15 +71,17 @@ Citation
 
 Please cite the following paper if you are using the code/model in your research paper.
 
-    @article{ShiBY15,
+    @article{ShiBY17,
       author    = {Baoguang Shi and
                    Xiang Bai and
                    Cong Yao},
-      title     = {An End-to-End Trainable Neural Network for Image-based Sequence Recognition
+      title     = {An End-to-End Trainable Neural Network for Image-Based Sequence Recognition
                    and Its Application to Scene Text Recognition},
-      journal   = {CoRR},
-      volume    = {abs/1507.05717},
-      year      = {2015}
+      journal   = {{IEEE} Trans. Pattern Anal. Mach. Intell.},
+      volume    = {39},
+      number    = {11},
+      pages     = {2298--2304},
+      year      = {2017}
     }
 
 
